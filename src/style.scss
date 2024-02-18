@@ -7,7 +7,7 @@
 
     .formWrapper{
         background-color: #F2EDEB;
-        padding:20px 60px;
+        padding:50px 83px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -32,12 +32,15 @@
 
             input{
                 padding: 15px;
+                padding-left: 0;
                 border:none;
                 border-bottom: 1px solid #574B60;
                 background-color:#F2EDEB;
                 outline: none;
                 &::placeholder{
                     color:rgb(129, 125, 125);
+                    position: absolute;
+                    left:0px;
                 }
                 &:focus::placeholder {
                     color: transparent;
