@@ -38,6 +38,8 @@
                 outline: none;
                 &::placeholder{
                     color:rgb(129, 125, 125);
+                    position: absolute;
+                    left:0px;
                 }
             }
             button {
@@ -54,5 +56,21 @@
             font-size: 12px;
             margin-top: 10px;
         }
+    }
+}
+
+.homescreen {
+    background-color: #CBC3E3;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        border:1px solid #F2EDEB;
+        border-radius: 10px;
+        width:65%;
+        height: 80%;
+        display:flex;
     }
 }
