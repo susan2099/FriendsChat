@@ -1,42 +1,21 @@
-import React, {useState} from "react";
-import {createUserWithEmailAndPassword} from "firebase/auth";
-import {auth} from "../firebase.js"
+import React from 'react'
 
 const Register = () => {
-    const [email, setEmail] = useState("")
-    const [password, setPassword] = useState("")
-
-    const registerUser= (e) => {
-        e.preventDefault();
-        createUserWithEmailAndPassword(auth,email,password)
-            .then((userCredential) => {
-                console.log(userCredential)
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    };
-    return(
-        <div className="register-container">
-            <form onSubmit={registerUser}>
-                <h1>Create Account</h1>
-                <input  
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                ></input>
-                <input
-                    type="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                ></input>
-                <button type="submit">Register</button>
+  return (
+    <div className="formContainer">
+        <div className="formWrapper">
+            <span className='logo'> FriendsChat</span>
+            <span className='title'>Register</span>
+            <form>
+                <input type="text" placeholder="display name"/>
+                <input type="email" placeholder='email'/>
+                <input type="password" placeholder='password'/>
+                <button>Register</button>
             </form>
+            <p>You already have an account? Login</p>
         </div>
-    );
+    </div>
+  );
 };
 
-
-export default Register;
+export default Register

@@ -6,7 +6,7 @@ const Login = () => {
         <div className="login-container">
             <form>
                 <h1>
-                    Register
+                    Login
                 </h1>
                 <input
                     type="email"

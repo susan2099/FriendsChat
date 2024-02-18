@@ -1,13 +1,11 @@
 import './App.css';
 import Register from './components/Register';
 import Login from './components/Login';
+import './style.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Login/>
-      <Register />
-    </div>
+   <Register/>
   );
 }
 
