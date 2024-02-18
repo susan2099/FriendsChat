@@ -1,27 +1,20 @@
-import React, {useState} from "react";
+import React from 'react'
+
 const Login = () => {
-    const [email,setEmail] = useState("")
-    const [password, setPassword] = useState("")
-    return (
-        <div className="login-container">
+  return (
+    <div className="formContainer">
+        <div className="formWrapper">
+            <span className='logo'> FriendsChat</span>
+            <span className='title'>Login</span>
             <form>
-                <h1>
-                    Login
-                </h1>
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value = {email}
-                    onChange={(e) => setEmail(e.target.value)}
-                ></input>
-                <input 
-                    type="password"
-                    placeholder="Enter your password"
-                    value = {password}
-                    onChange={(e) => setPassword(e.target.value)}
-                ></input>
+                <input type="email" placeholder='email'/>
+                <input type="password" placeholder='password'/>
+                <button>Login</button>
             </form>
+            <p>You don't have an account? Register</p>
         </div>
-    );
+    </div>
+  );
 };
-export default Login;
+
+export default Login

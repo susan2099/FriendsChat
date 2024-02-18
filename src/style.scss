@@ -35,11 +35,24 @@
                 border:none;
                 border-bottom: 1px solid #574B60;
                 background-color:#F2EDEB;
-
+                outline: none;
                 &::placeholder{
-                    color:rgb(175,175,175);
+                    color:rgb(129, 125, 125);
                 }
             }
+            button {
+                background-color: #574B60;
+                color: white;
+                padding: 10px;
+                font-weight: bold;
+                border:none;
+                cursor:pointer;
+            }
+        }
+        p{
+            color:#574B60;
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
 }
