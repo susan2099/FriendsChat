@@ -1,8 +1,18 @@
 import React from 'react'
+import Img from "../images/img.png"
 
 const Input = () => {
   return (
-    <div>Input</div>
+    <div className='input'> Input
+      <input type="text" placeholder='Type something...'/>
+      <div className='send'>
+        <input type="file" style={{display:"none"}} id="file"/>
+        <label htmlFor='file'>
+          <img src={Img} alt=""/>
+        </label>
+        <button>Send</button>
+      </div>
+    </div>
   )
 }
 

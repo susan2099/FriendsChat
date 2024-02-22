@@ -80,16 +80,16 @@
 
         .sidebar{
             flex:1; 
-            background-color: #b69ccf;    
+            background-color: #8e78a3;    
             
             .navbar{
                 display: flex;
                 align-items: center;
-                background-color: #9878b7;
+                background-color: #503e61;
                 height: 50px;
                 padding: 10px;
                 justify-content: space-between;
-                color: #452a4e	;
+                color: #ffffff	;
 
                 .logo{
                     font-weight: bold;
@@ -108,8 +108,8 @@
                     }
 
                     button{
-                        background-color:#b69ccf;
-                        color:#452a4e;
+                        background-color:#8e78a3;
+                        color:#0d080f;
                         font-size:10px;
                         border: none;
                         cursor: pointer;
@@ -149,10 +149,43 @@
                     border-radius: 50%;
                     object-fit: cover;
                 }
+                .userChatInfo{
+                    span{font-size: 18px; font-weight: 500;}
+                    p{font-size: 14px;color:white}
+                }
             }
         }
         .chat{
             flex: 2;
+
+            .chatInfo{
+                height: 50px;
+                background-color: #68547a;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:10px;
+                color:white
+            }
+            .chatIcons{
+                display: flex;
+                gap:10px;
+
+                img {
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
+            .messages{
+                background-color: #c4add8;
+                padding:10px;
+                height: calc(100% - 160px);
+            }
+            .input{
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+            }
         }
     }
 }
