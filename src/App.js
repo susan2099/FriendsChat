@@ -11,7 +11,7 @@ import {
 
 function App() {
   return (
-    /*<BrowserRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/">
           <Route index element={<Login/>} />
@@ -19,8 +19,7 @@ function App() {
           <Route path="register" element={<Register />} />
         </Route>
       </Routes>
-    </BrowserRouter>*/
-    <HomeScreen/>
+    </BrowserRouter>
   );
 }
 
