@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Img from "../images/img.png"
+import { ChatContext } from '../context/ChatContext'
+import { AuthContext } from '../context/AuthContext'
 
 const Input = () => {
+
+  const [text, setText] = useState("")
+  const [img, setImg] = useState(null)
+
+  const {currentUser} = useContext(AuthContext)
+  const {data} = useContext(ChatContext)
+
+  const handleSend = () => {
+    if(img) {
+
+    }else{
+      
+    }
+  }
   return (
     <div className='input'>
       <input type="text" placeholder='Type something...'/>
@@ -10,7 +26,7 @@ const Input = () => {
         <label htmlFor='file'>
           <img src={Img} alt=""/>
         </label>
-        <button>Send</button>
+        <button onClick={handleSend}>Send</button>
       </div>
     </div>
   )
